@@ -49,6 +49,9 @@
                     <div class="card-body">
                         {{ $message->message }}
                     </div>
+                    <div class="card-footer">
+                        Created at: {{ $message->created_at }}
+                    </div>
                 </div>
             </div>
         @endforeach
