@@ -19,7 +19,6 @@ class MessageController extends Controller
     public function store(StoreMessageRequest $request)
     {
         $data = $request->validated();
-        dd($data);
         $this->messageRepository->createMessage($data);
 
         return redirect('/');
